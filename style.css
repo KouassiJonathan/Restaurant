@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.img-bg{
+    background: url(/src/images/free-layer-blur.png);
+    
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

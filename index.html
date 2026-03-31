@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--lien icon boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!--lien css-->
+  <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <!--lien css-->
+  <title>Restaurant</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="lg:flex   lg:flex-row items-center flex-col lg:justify-between lg:px-15  shadow  py-3 px-5 ">
+
+
+    <div class="flex items-center lg:justify-center  justify-between gap-2">
+      <!--logo-->
+      <img src="src/images/favicon.ico" class="w-8" alt="logo">
+      <h1 class="font-bold text-gray-700 text-xl">Restaurant</h1>
+
+
+      <!--boutton-->
+      <div class="flex mt-3 lg:hidden  ">
+        <a class=" bg-violet-500 rounded-md px-4 py-2 text-white font-bold" href="#">Book A Table</a>
+      </div>
+
+      <!--burger-->
+      <label for="burger" class=" flex gap-1 flex-col lg:hidden border p-2 rounded-md py-3">
+        <span class="bg-gray-500 w-8 h-1 "></span>
+        <span class="bg-gray-500 w-8 h-1 "></span>
+        <span class="bg-gray-500 w-8 h-1 "></span>
+      </label>
+    </div>
+
+
+
+    <!--menu-->
+    <input type="checkbox" name="burger" id="burger" class="peer hidden">
+    <div
+      class="hidden text-[16px] flex-col gap-7 text-gray-600 font-bold lg:flex-row lg:flex  peer-checked:flex lg:mb-0  pt-4 lg:pt-0">
+      <a class="hover:text-violet-500 duration-500 " href="#">Home</a>
+      <a class="hover:text-violet-500 duration-500 " href="#">About Us</a>
+      <a class="hover:text-violet-500 duration-500 " href="#">Services</a>
+      <a class="hover:text-violet-500 duration-500 " href="#">Team</a>
+      <a class="hover:text-violet-500 duration-500 " href="#">FAQS</a>
+    </div>
+
+
+
+    <!--boutton-->
+    <div class="lg:flex mt-3 hidden  ">
+      <a class=" bg-violet-500 rounded-md px-4 py-2 text-white font-bold" href="#">Book A Table</a>
+    </div>
+
+
+  </nav>
+  <!--barre grisé-->
+  <p class="bg-gray-400  m-0 p-0"></p>
+  <!--section hero-->
+  <section class="img-bg lg:mt- mt-22">
+    <div class=" lg:px-15 px-5  ">
+      <div class="text-center flex justify-center items-center flex-col ">
+        <!--text -->
+        <div  class="lg:pt-15">
+          <span class="border border-gray-300 py-2 px-4 rounded-2xl  text-gray-600 " href=""> Serving Food Lovers
+            Since 2016 ❤️</span>
+        </div>
+        <!--text -->
+        <h1 class="lg:mt-12 mt-7 text-3xl lg:text-5xl font-bold text-gray-700">Savor Every Bite. Savor <br> Every
+          Moment.</h1>
+        <!--trait -->
+      <img src="src/images/trait.svg" class="filter-[invert(29%)_sepia(98%)_saturate(1234%)_hue-rotate(243deg)_brightness(89%)_contrast(94%)] lg:flex hidden" alt="">
+        <!--text -->
+        <p class="lg:mt-7 mt-6 lg:text-[17px] text-[18px] lg:px-0 px-2 text-gray-600">Welcome to a dining experience
+          where flavor, freshness, and hospitality come together. Whether it's <br> your first visit or your hundredth,
+          every plate is made to impress.</p>
+        <!--boutton-->
+        <div class="flex mt-5 items-center justify-center gap-5 ">
+          <a class=" bg-violet-500 rounded-md px-4 py-2 text-white font-bold" href="#">Experience The Flavor <i
+              class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--image-->
+    <div class="mt-15 lg:mt-28  ">
+      <img class=" lg:w-8xl lg:h-58  w-full h-25" src="src/images/dishes-hero.png" alt="menu">
+    </div>
+
+  </section>
+
+  <!--section about-->
+  <section class="bg-gray-50 pb-19 mt-15 lg:mt-25 ">
+    <div class="lg:px-15 px-5 ">
+      <div class="text-center">
+        <!--text-->
+        <h1 class="lg:pt-28 lg:py-0 lg:pb-5 py-6 text-3xl lg:text-4xl font-bold text-gray-700">About Us</h1>
+        <p class="mt-0 lg:text-[21px] text-[22px] lg:px-0 px-2 text-gray-600">Our achievement story stands as a powerful
+          testament to teamwork and perseverance. United, we have faced challenges, <br> celebrated victories, and woven
+          a narrative of growth and success.</p>
+        <!--boutton-->
+        <div class="flex lg:mt-5 lg:mb-24 mt-5 mb-14 items-center justify-center gap-5 ">
+          <a class=" bg-violet-500 rounded-md px-4 py-2 text-white text-xl" href="#">Read More <i
+              class="bi bi-arrow-right"></i></a>
+        </div>
+        <!--image et carte-->
+        <div class="mt-10 lg:mt-20 relative">
+          <!--image-->
+          <img src="src/images/restaurant-about-us.png" class="rounded-xl  " alt="about">
+          <!--carte lg-->
+          <div class="absolute left-1/2 -translate-x-1/2 -bottom-20 
+              bg-white w-[80%] lg:w-[60%] 
+              shadow-xl rounded-xl 
+              px-10 py-5 border border-gray-100 hidden lg:flex">
+
+            <div class="grid grid-cols-4  gap-10">
+              <!--colonne 1-->
+              <div class="flex items-center flex-col justify-center text-violet-300 text-center ">
+                <i class="bi bi-person-fill-check text-4xl pb-6 "></i>
+                <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">7+</h1>
+                <p class="text-gray-500 p-0 m-0 text-[15px]">Years of Experience</p>
+              </div>
+
+              <!--colonne 2-->
+              <div class="flex items-center flex-col justify-center text-violet-300 text-center ">
+                <i class="bi bi-menu-up text-4xl pb-6 "></i>
+                <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">30+</h1>
+                <p class="text-gray-500 p-0 m-0 text-[15px]">Dishes in Our Menu</p>
+              </div>
+
+              <!--colonne 3-->
+              <div class="flex items-center flex-col justify-center text-violet-300 text-center ">
+                <i class="bi bi-stars text-4xl pb-6 "></i>
+                <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">500+</h1>
+                <p class="text-gray-500 p-0 m-0 text-[15px]">Customer Reviews</p>
+              </div>
+
+              <!--colonne 4-->
+              <div class="flex items-center flex-col justify-center text-violet-300 text-center ">
+                <i class="	bi bi-balloon-fill text-4xl pb-6 "></i>
+                <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">10k+</h1>
+                <p class="text-gray-500 p-0 m-0 text-[15px]">Customer Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--carte sm-->
+        <div class="  items-center justify-center text-center
+              bg-white w-full lg:hidden flex 
+              shadow-xl rounded-xl 
+              px-18 py-5 border border-gray-100 mx-0 mt-6 ">
+
+          <div class="flex  flex-col  gap-10">
+            <!--colonne 1-->
+            <div class=" text-violet-300  ">
+              <i class="bi bi-person-fill-check text-4xl pb-6 "></i>
+              <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">7+</h1>
+              <p class="text-gray-500 p-0 m-0 text-[15px]">Years of Experience</p>
+            </div>
+            <!--colonne 2-->
+            <div class=" text-violet-300  ">
+              <i class="bi bi-menu-up text-4xl pb-6 "></i>
+              <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">30+</h1>
+              <p class="text-gray-500 p-0 m-0 text-[15px]">Dishes in Our Menu</p>
+            </div>
+            <!--colonne 3-->
+            <div class=" text-violet-300  ">
+              <i class="bi bi-stars text-4xl pb-6 "></i>
+              <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">500+</h1>
+              <p class="text-gray-500 p-0 m-0 text-[15px]">Customer Reviews</p>
+            </div>
+            <!--colonne 4-->
+            <div class=" text-violet-300  ">
+              <i class="bi bi-stars text-4xl pb-6 "></i>
+              <h1 class="text-3xl font-bold p-0 m-0 text-violet-500">10k+</h1>
+              <p class="text-gray-500 p-0 m-0 text-[15px]">Happy Customers</p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!--section service-->
+  <section class="mt-5 lg:mt-0 ">
+    <div class="px-5 lg:px-15">
+      <div class="text-center">
+        <!--text-->
+        <h1 class="lg:pt-28 lg:py-0 lg:pb-5 py-6 text-3xl lg:text-4xl font-bold text-gray-700">Crafting Moments,
+          Serving You</h1>
+        <p class="mt-0 mb-25 lg:text-[21px] text-[22px] lg:px-0 px-2 text-gray-600">Our achievement story stands as a
+          powerful
+          testament to teamwork and perseverance. United, we have faced challenges, <br> celebrated victories, and woven
+          a narrative of growth and success.</p>
+        <div class="grid grid-cols-1  lg:grid-cols-3  gap-4 lg:gap-8">
+          <!--carte 1-->
+          <div class="rounded-xl shadow mb-10 border border-gray-300  ">
+            <img src="src/images/free-blog-1.png" class="w-full rounded-xl" alt="service1">
+            <div class="px-10 pb-10 text-start">
+              <h1 class="text-xl  font-bold text-gray-700 py-3">Buffet Service</h1>
+              <p class="text-start text-gray-500 mb-10">Navigate effortlessly with our intuitive design, optimized for
+                all devices. Enjoy a seamless experience whether you're on a computer or mobile device</p>
+              <a class="bg-violet-500 rounded-md px-4 py-2 text-white " href="#">Read More <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!--carte 2-->
+          <div class="rounded-xl shadow mb-10 border border-gray-300 ">
+            <img src="src/images/free-blog-2.png" class="w-full rounded-xl" alt="service1">
+            <div class="px-10 pb-10 text-start">
+              <h1 class="text-xl  font-bold text-gray-700 py-3">Food delivery</h1>
+              <p class="text-start text-gray-500 mb-10">Enjoy a safe shopping experience with multiple payment options
+                and SSL encryption. Your personal and financial information is always protected</p>
+              <a class="bg-violet-500 rounded-md px-4 py-2 text-white " href="#">Read More <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!--carte 3-->
+          <div class="rounded-xl shadow mb-10 border border-gray-300">
+            <img src="src/images/free-blog-3.png" class="w-full rounded-xl" alt="service1">
+            <div class="px-10 pb-10 text-start">
+              <h1 class="text-xl  font-bold text-gray-700 py-3">Cafeteria</h1>
+              <p class="text-start text-gray-500 mb-10">Find products quickly with advanced filters, sorting options,
+                and suggestion. Save time and effortlessly locate exactly what you need with ease.</p>
+              <a class="bg-violet-500 rounded-md px-4 py-2 text-white " href="#">Read More <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--section feedback-->
+  <section class="mt-5 lg:mt-10 mb-5 lg:mb-8 bg-gray-50">
+    <div class="lg:px-15 px-5 ">
+      <div class="grid lg:grid-cols-3 grid-cols-1 ">
+        <!--debut de la ligne--> <!--colonne 1 : text-->
+        <div class="pt-6 lg:pt-26 flex flex-col gap-2 lg:gap-5 lg:py-46">
+          <h2 class="lg:text-4xl text-[23px] font-bold text-gray-700">Customers Feedback</h2>
+          <p class="text-[21px] text-gray-600 lg:w-90">From career changes to dream jobs, here's how FlyonUI helped.</p>
+        </div>
+        <!--colonne 2 : carte 1-->
+        <div
+          class=" bg-white  lg:w-95 lg:h-55  rounded-xl shadow p-5 mt-9 lg:mt-20 flex flex-col gap-2 hover:border-violet-500 transition border-transparent border duration-400 ">
+          <!--profil-->
+          <div class=" flex gap-3 ">
+            <img src="src/images/7.png" class="  w-14 rounded-full" alt="7.png">
+            <div>
+              <h5 class="text-[17px] text-gray-700 font-bold ">Craig Bator</h5>
+              <p class="text-[15px] text-gray-600 ">Food Blogger</p>
+            </div>
+
+          </div>
+          <!--note-->
+          <div>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+          </div>
+          <!--description-->
+          <div>
+            <p class="text-[17px] text-gray-700 ">Chef Marilyn’s signature curry is hands-down the best I’ve ever had.
+              The flavors are bold and unforgettable!”</p>
+          </div>
+        </div>
+        <!--colonne 3 : carte 2-->
+        <div
+          class=" bg-white  lg:w-95 lg:h-55 rounded-xl shadow p-5 mt-9 lg:mt-20 flex flex-col gap-2 hover:border-violet-500 transition border-transparent border duration-400  ">
+          <!--profil-->
+          <div class=" flex gap-3 ">
+            <img src="src/images/2.png" class="  w-14 rounded-full" alt="2.png">
+            <div>
+              <h5 class="text-[17px] text-gray-700 font-bold ">Lindsey Saris</h5>
+              <p class="text-[15px] text-gray-600 ">Travel Chef Reviewer</p>
+            </div>
+
+          </div>
+          <!--note-->
+          <div>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-fill text-orange-400/90 text-xl"></i>
+            <i class="bi bi-star-half text-orange-400/90 text-xl"></i>
+          </div>
+          <!--description-->
+          <div>
+            <p class="text-[17px] text-gray-700 ">“Takahiro’s sushi is pure perfection. So fresh, delicate, and
+              beautifully presented — a five-star experience.”</p>
+          </div>
+        </div>
+        <!--fin de la ligne-->
+      </div>
+    </div>
+
+
+  </section>
+
+  <!--section order-->
+  <section class="mt-5 lg:mt-10 ">
+    <div class="lg:px-15 px-5">
+      <!--carte-->
+      <div class="bg-gray-100/70  w-full border border-gray-200 lg:p-16 p-7 lg:h-83 h-90 shadow  rounded-3xl  lg:justify-between relative overflow-hidden ">
+        <!--gauche de la carte : les textes et boutton-->
+        <div class="flex flex-col  gap-5 justify-center items-center text-center lg:justify-start lg:text-start lg:items-start">
+          <!--les textes -->
+          <div class="flex flex-col gap-5">
+                <h2 class="text-gray-700 lg:text-3xl text-[20px] font-bold ">Order Now & Satisfy Your Cravings</h2>
+            <p class="lg:w-120  text-gray-500  text-[16px]">Let us bring the flavors you love straight to your door. From classic
+              comfort
+              dishes to chef-curated specials, every bite is made with care and delivered fresh. Skip the wait —
+              your next favorite meal is just a click away.
+            </p>
+          </div>
+            
+          <!--boutton-->
+          <div class="text-white ">
+            <a class="bg-violet-500 rounded  p-2 pl-5 flex items-center w-33 h-10 " href="#">Read More <i
+                class="bi bi-arrow-right-short text-2xl "></i></a>
+          </div>
+        </div>
+        <!--droite de la carte : l'image-->
+          <div class=" items-end justify-end lg:flex hidden">
+                <img src="src/images/pizza.png"  class="w-105 absolute top-0 right-0  " alt="pizza">
+          </div>
+          <!--fin de la carte-->
+      </div>
+    </div>
+  </section>
+  <!--section team-->
+  <section class="mt-5 lg:mt-10 lg:py-2">
+    <div class="px-5 lg:px-15 ">
+      <!--text-->
+      <div class="text-center">
+        <h1 class="lg:pt-2 lg:mt-2 lg:py-0 lg:pb-3 py-6 text-3xl lg:text-4xl font-bold text-gray-700">Get to Know
+          Our Amazing Team</h1>
+        <p class="mt-0 mb-15 lg:text-[21px] text-[22px] lg:px-0 px-2 text-gray-600">Meet the Passionate Experts Behind
+          Our Success and Learn More About Their Roles .</p>
+      </div>
+      <!--carte -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-1 lg:gap-5 ">
+        <!--carte 1-->
+        <div class="shadow mb-10 border border-gray-200  hover:border-violet-500 rounded-xl  ">
+          <!--image-->
+          <div class="flex items-center justify-center bg-gray-50">
+            <img src="src/images/chef-1.png" class="w-50 h-70   " alt="service1">
+          </div>
+          <!--texte -->
+          <div class="px-10 pb-10 text-start">
+            <h1 class="text-xl  mb-3 text-gray-800 py-3 border-b border-gray-300">Cheyenne Workman</h1>
+            <p class="text-start text-gray-500 ">Head Chef A visionary leader driving innovation and collaboration.</p>
+          </div>
+        </div>
+
+        <!--carte 2-->
+        <div class="shadow mb-10 border border-gray-200  hover:border-violet-500 rounded-xl  ">
+          <!--image-->
+          <div class="flex items-center justify-center bg-gray-50">
+            <img src="src/images/chef-2.png" class="w-50 h-70   " alt="service1">
+          </div>
+          <!--texte -->
+          <div class="px-10 pb-10 text-start">
+            <h1 class="text-xl  mb-3 text-gray-800 py-3 border-b border-gray-300">Cheyenne Workman</h1>
+            <p class="text-start text-gray-500 ">Head Chef A visionary leader driving innovation and collaboration.</p>
+          </div>
+        </div>
+
+        <!--carte 3-->
+        <div class="shadow mb-10 border border-gray-200  hover:border-violet-500 rounded-xl  ">
+          <!--image-->
+          <div class="flex items-center justify-center bg-gray-50">
+            <img src="src/images/chef-3.png" class="w-50 h-70   " alt="service1">
+          </div>
+          <!--texte -->
+          <div class="px-10 pb-10 text-start">
+            <h1 class="text-xl  mb-3 text-gray-800 py-3 border-b border-gray-300">Cheyenne Workman</h1>
+            <p class="text-start text-gray-500 ">Head Chef A visionary leader driving innovation and collaboration.</p>
+          </div>
+        </div>
+
+        <!--carte 4-->
+        <div class="shadow mb-10 border border-gray-200  hover:border-violet-500 rounded-xl  ">
+          <!--image-->
+          <div class="flex items-center justify-center bg-gray-50">
+            <img src="src/images/chef-4.png" class="w-50 h-70   " alt="service1">
+          </div>
+          <!--texte -->
+          <div class="px-10 pb-10 text-start">
+            <h1 class="text-xl  mb-3 text-gray-800 py-3 border-b border-gray-300">Cheyenne Workman</h1>
+            <p class="text-start text-gray-500 ">Head Chef A visionary leader driving innovation and collaboration.</p>
+          </div>
+        </div>
+        <!-- fin carte -->
+      </div>
+    </div>
+  </section>
+
+  <!--section FAQS-->
+  <section class="mt-5 lg:mt-10">
+    <div class="px-5 lg:px15">
+      <!--text-->
+      <div class="text-center">
+        <h1 class="lg:pt-2 lg:mt-2 lg:py-0 lg:pb-3 py-6 text-3xl lg:text-4xl font-bold text-gray-700">Frequently
+          Asked Questions</h1>
+        <p class="mt-0 mb-8 lg:mb-25 lg:text-[21px] text-[22px] lg:px-0 px-2 text-gray-600">Levarage artificial
+          intelligence algorithms to provide users with
+          valuable insights.</p>
+        <!--colonne mobile -->
+        <div
+          class="text-center px-5 lg:10 lg:hidden flex flex-col  hover:border py-10 hover:rounded-2xl  hover:border-violet-500">
+          <h1 class="font-bold text-xl text-gray-700 lg:mb-3 mb-1 ">Do you offer home delivery?</h1>
+          <p class="text-gray-500 mb-1 lg:mb-3">Yes, we do! You can place your order <br> directly through our website
+            or via <br> trusted food delivery platforms like <br> Swiggy
+            and Zomato. We ensure that <br> all dishes are packed with care and <br> delivered promptly, so you can
+            enjoy <br> restaurant-quality food in the comfort <br> of
+            your home.</p>
+          <a class=" text-violet-500 text-[17px]  " href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="grid grid-cols-3 mx-16">
+          <!--debut -->
+          <!--colonne 1 -->
+          <div
+            class="text-center px-5 lg:10 lg:flex lg:flex-col hidden hover:border py-10 hover:rounded-2xl  hover:border-violet-500">
+            <h1 class="font-bold text-xl text-gray-700 lg:mb-3 mb-1 ">Do you offer home delivery?</h1>
+            <p class="text-gray-500 mb-1 lg:mb-3">Yes, we do! You can place your order <br> directly through our website
+              or via <br> trusted food delivery platforms like <br> Swiggy
+              and Zomato. We ensure that <br> all dishes are packed with care and <br> delivered promptly, so you can
+              enjoy <br> restaurant-quality food in the comfort <br> of
+              your home.</p>
+            <a class=" text-violet-500 text-[17px] " href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+
+
+          </div>
+
+          <!--colonne 2 -->
+          <div
+            class="text-center px-5 lg:10  lg:flex lg:flex-col hidden  hover:border py-10 hover:rounded-2xl  hover:border-violet-500 ">
+            <h1 class="font-bold text-xl text-gray-700 lg:mb-3 mb-1 ">How can I book a table?</h1>
+            <p class="text-gray-500 b-1 lg:mb-3">Booking a table is simple and quick. <br> directly through our website
+              or via <br> page, choose your preferred date and<br>
+              few clicks. You 'll receive a <br> confirmation instantly. Prefer to speak<br> with someone? You can also
+              call us <br> restaurant-quality food in the comfort <br> of
+              your home.</p>
+            <a class=" text-violet-500 text-[17px] " href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!--colonne 3 -->
+          <div
+            class="text-center px-5 lg:10 lg:flex lg:flex-col hidden hover:border py-10 hover:rounded-2xl  hover:border-violet-500">
+            <h1 class="font-bold text-xl text-gray-700 lg:mb-3 mb-1 ">What are your opening hours?</h1>
+            <p class="text-gray-500 mb-1 lg:mb-3">Booking a table is simple and quick <br> Just head over to our
+              reservation<br> trusted food delivery platforms like <br> Swiggy
+              and Zomato. We ensure that <br> all dishes are packed with care and <br> delivered promptly, so you can
+              enjoy <br> restaurant-quality food in the comfort <br> of
+              your home.</p>
+            <a class=" text-violet-500 text-[17px] " href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <!--fin-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--endbar-->
+  <section class="mt-13 lg:mt-19 py-3 lg:py-7 border-b border-gray-300 ">
+    <div class="px-5 lg:px-10">
+      <div class="flex lg:flex-row flex-col justify-between items-center gap-5  lg:gap-0 ">
+        <!--logo-->
+        <div class="flex gap-2 items-center  ">
+          <img src="src/images/favicon.ico" class="w-8" alt="logo">
+          <h1 class="font-bold text-gray-700 text-xl">Restaurant</h1>
+        </div>
+        <!--menu-->
+        <ul class="text-gray-500 font-bold flex gap-4">
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">Team</a>
+          <a href="#">FAQS</a>
+        </ul>
+        <!--icon social-->
+        <div class="flex gap-3 text-gray-800 text-[18px]">
+          <i class="bi bi-discord"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-github"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+<!--footer-->
+<footer>
+  <div class="text-center">
+    <h1 class="text-gray-500 py-4 lg:py-7 te">©2025 <a class="text-violet-400 font-bold" href="#"> FlyonUI</a> , Made
+      With ❤️ for better web
+      • Distributed by <a class="text-violet-400 font-bold" href="">ThemeWagon</a></h1>
+  </div>
+
+</footer>
+
+</html>
